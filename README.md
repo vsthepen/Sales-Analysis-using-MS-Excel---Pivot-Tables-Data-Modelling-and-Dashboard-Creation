@@ -20,7 +20,7 @@ To import the table into Power Query, I selected the "Get Data" > "From Table/Ra
 
 ![image](https://github.com/user-attachments/assets/958cf8ca-cb08-4967-aa98-3aeae7a67b2e)
 
-**Transformation Steps in Power Query:**
+### Transformation Steps in Power Query
 
 **•	Ensuring Data Quality:** I enabled the Column Quality feature to help identify and address any errors in each column.
 
