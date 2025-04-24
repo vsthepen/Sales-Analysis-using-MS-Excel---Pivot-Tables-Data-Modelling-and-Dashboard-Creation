@@ -1,8 +1,8 @@
 # Data Analysis using MS Excel - Pivot-Tables, Data-Modelling and Dashboard Creation.
 
-Recently, I analysed a sales and customer dataset using Excel to draw insights that could drive actionable steps for stakeholders. The dataset, provided by a U.S. company, was stored in an Excel table and 
+Recently, I analysed a sales and customer dataset using Excel to draw insights that could drive actionable steps for stakeholders. The dataset, provided by a U.S. company, was stored in an Excel table and covered orders from 2014 to 2017. 
 
-covered orders from 2014 to 2017. Let me walk you through the steps I took and the thought process behind each one:
+Let me walk you through the steps I took and the thought process behind each one:
 
 
 **Data Exploration:**
