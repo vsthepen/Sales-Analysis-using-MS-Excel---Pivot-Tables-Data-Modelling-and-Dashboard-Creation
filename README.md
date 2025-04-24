@@ -75,7 +75,7 @@ I created the pivot table, and built relevant measures such as Total Sales, Numb
 
 Once the pivot tables were created, I began mining the data by checking for patterns, trends, and anomalies before proceeding to create charts and graphs.
 
-Before creating any visual, chart or graph, I typically first generated a pivot table for the relevant data, highlighted it, then selected the appropriate chart option that displayed the values clearly.
+Before creating any visual, chart or graph, I typically generated a pivot table for the relevant data, highlighted it, then selected the appropriate chart option that displayed the values clearly.
 
 ### Data Visualisation & Storytelling
 
@@ -91,9 +91,7 @@ For instance:
 
 •	Maps to show top-performing states
 
-I also highlighted key data points to draw attention and used data labels, colour, and design to make the dashboard and visuals more engaging for stakeholders. Overall, I focused on using simple visuals that 
-
-were easy to interpret.
+I also highlighted key data points to draw attention and used data labels, colour, and design to make the dashboard and visuals more engaging for stakeholders. Overall, I focused on using simple visuals that were easy to interpret.
 
 I designed the background using PowerPoint and imported it into Excel to use as the report’s background.
 
