@@ -17,6 +17,7 @@ To import the table into Power Query, I selected the "Get Data" > "From Table/Ra
 
 ![image](https://github.com/user-attachments/assets/341f18a4-aab2-4058-a45f-3f93201a2182)
 
+
 ![image](https://github.com/user-attachments/assets/958cf8ca-cb08-4967-aa98-3aeae7a67b2e)
 
 **Transformation Steps in Power Query:**
@@ -27,9 +28,7 @@ To import the table into Power Query, I selected the "Get Data" > "From Table/Ra
 
 **•	Removing Irrelevant Columns:** I removed unnecessary columns to reduce the model size and improve report performance.
 
-**•	Rectifying Locale Issues:** While transforming the Date column, I encountered an error when changing the column data type to Date. This was resolved by right-clicking the column header, 
-
-selecting "Change Type" > "Using Locale," and choosing the appropriate locale for the date format.
+**•	Rectifying Locale Issues:** While transforming the Date column, I encountered an error when changing the column data type to Date. This was resolved by right-clicking the column header, selecting "Change Type" > "Using Locale," and choosing the appropriate locale for the date format.
 
 **•	Removing Null Values:** I ensured that missing or null values were removed to avoid unexpected results during analysis.
 
@@ -41,9 +40,7 @@ Once the transformation was complete, I loaded the cleansed data into the Excel 
 
 ![image](https://github.com/user-attachments/assets/47514567-9bc4-46ed-adc1-2fb090897b6a)
 
-**Creating a Date Table:** Once the table was added to the data model, I created a dedicated Date Table to support time intelligence functions in the analysis. The Date Table is automatically populated with the
-
-earliest and latest dates by scanning through the date columns in the fact table.
+**Creating a Date Table:** Once the table was added to the data model, I created a dedicated Date Table to support time intelligence functions in the analysis. The Date Table is automatically populated with the earliest and latest dates by scanning through the date columns in the fact table.
 
 ![image](https://github.com/user-attachments/assets/15413d7c-f4b1-46af-9753-26f22730c715)
 
@@ -51,13 +48,9 @@ earliest and latest dates by scanning through the date columns in the fact table
 
 I then connected *Date[Date]* to *Customer_Table[Order Date]* using a One-to-Many relationship. I also connected *Date[Date]* to *Customer_Table[Ship Date]* using a One-to-Many relationship. This is an example 
 
-of a **Role-Playing Dimension**, where a dimension table can be used multiple times within a fact table. In this case, the Date Table is acting as a role-playing dimension with different relationships being used
+of a **Role-Playing Dimension**, where a dimension table can be used multiple times within a fact table. In this case, the Date Table is acting as a role-playing dimension with different relationships being used for different date columns.
 
-for different date columns.
-
-However, there's a catch — **only one relationship can be active at a time**. Since my analysis is focused on orders, I made that relationship active, as seen in the image below with the bold line, while the 
-
-inactive relationship can be identified with the broken lines.
+However, there's a catch — **only one relationship can be active at a time**. Since my analysis is focused on orders, I made that relationship active, as seen in the image below with the bold line, while the inactive relationship can be identified with the broken lines.
 
 ![image](https://github.com/user-attachments/assets/4c6e66db-b7f6-4d18-8118-9caa142e2e2d)
 
